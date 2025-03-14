@@ -15,7 +15,7 @@ public class PasswordMaker {
     }
 
     public String getPassword() {
-        return StringRandomizer.generateRandomString(MAGIC_NUMBER)+getRandomSubstring() + name.length()+ (Math.random()*50);
+        return StringRandomizer.generateRandomString(MAGIC_NUMBER)+getRandomSubstring() + name.length()+ (int)(Math.random()*50);
     }
 
 }
