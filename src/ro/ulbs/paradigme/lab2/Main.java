@@ -20,7 +20,7 @@ public class Main {
 
         System.out.println("Numarul de instante create: " + Form.counter);
 
-        PasswordMaker passwordMaker = new PasswordMaker("Marcel123");
+        PasswordMaker passwordMaker = new PasswordMaker("Marcel112");
         String password = passwordMaker.getPassword();
         System.out.println("Generated Password: " + password);
     }
