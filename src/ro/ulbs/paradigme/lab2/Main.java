@@ -28,7 +28,7 @@ public class Main {
         PasswordMaker passwordMaker = new PasswordMaker("Marcel112");
         String password = passwordMaker.getPassword();
         System.out.println("Generated Password: " + password);
-        */
+
         //Lab 4
         List<Integer> x = new ArrayList();
         List<Integer> y = new ArrayList();
@@ -146,5 +146,6 @@ public class Main {
         for (student s : restantieri) {
             System.out.println(s + " - Failed subjects: " + s.getFailedCount());
         }
+        */
     }
 }
