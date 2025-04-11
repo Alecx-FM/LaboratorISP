@@ -1,7 +1,6 @@
 package ro.ulbs.paradigme.lab2;
 import ro.ulbs.paradigme.lab4.student;
 import java.util.*;
-
 import ro.ulbs.paradigme.lab3.util.PasswordMaker;
 
 public class Main {

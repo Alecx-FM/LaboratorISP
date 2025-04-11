@@ -3,9 +3,9 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class student {
-    private String name;
-    private String grupa;
-    private ArrayList<Integer> note;
+    private final String name;
+    private final String grupa;
+    private final ArrayList<Integer> note;
 
     // Constructor with random grades
     public student(String name, String grupa) {

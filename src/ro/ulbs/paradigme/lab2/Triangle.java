@@ -1,8 +1,8 @@
 package ro.ulbs.paradigme.lab2;
 
 public class Triangle extends Form {
-    private float height;
-    private float base;
+    private final float height;
+    private final float base;
 
     public Triangle() {
         super();

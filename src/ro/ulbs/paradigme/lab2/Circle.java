@@ -1,7 +1,7 @@
 package ro.ulbs.paradigme.lab2;
 
 public class Circle extends Form {
-    private float radius;
+    private final float radius;
 
     public Circle() {
         super();

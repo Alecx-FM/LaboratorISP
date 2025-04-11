@@ -1,7 +1,7 @@
 package ro.ulbs.paradigme.lab2;
 
 public class Form {
-    private String color;
+    private final String color;
     public static int counter=0;
     public Form() {
         this.color = "white";
