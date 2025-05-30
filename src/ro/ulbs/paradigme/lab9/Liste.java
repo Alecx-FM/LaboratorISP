@@ -1,7 +1,7 @@
 package ro.ulbs.paradigme.lab9;
 
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
+import java.util.stream.*;
 import java.util.Random;
 import java.util.stream.Collectors;
 
@@ -64,9 +64,19 @@ public class Liste {
         System.out.println("Lista cu patratele: " + squaredDistinct);
         */
         // Exercițiul 3
-
-
+        String text = "Acesta este un program scris cu java 8 si expresii lambda";
+        List<String> words = Arrays.asList(text.split(" "));
+        List<String> longWords = words.stream()
+                .filter(w -> w.length() >= 5)
+                .collect(Collectors.toList());
+        System.out.println("Cuvant >=5 charactere: " + longWords);
+        System.out.println("Numar: " + longWords.size());
+        List<String> sorted = new ArrayList<>(longWords);
+        sorted.sort(Comparator.naturalOrder());
+        System.out.println("Sortare: " + sorted);
+        Optional<String> startsWithP = longWords.stream()
+                .filter(w -> w.startsWith("p"))
+                .findFirst();
+        System.out.println("Cuvant care incepe cu 'p': " + startsWithP.orElse("None"));
     }
-
-
 }
